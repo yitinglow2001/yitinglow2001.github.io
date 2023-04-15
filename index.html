@@ -32,29 +32,6 @@
   color: #666;
 }
     </style>
-    <script>
-        // Add active class to the menu item based on scroll position
-window.addEventListener('scroll', function() {
-  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-  var menuItems = document.querySelectorAll('.scroll-menu a');
-  var sections = document.querySelectorAll('section'); // Assuming sections have 'id' attributes
-
-  for (var i = 0; i < sections.length; i++) {
-    var section = sections[i];
-    var sectionTop = section.offsetTop;
-    var sectionHeight = section.offsetHeight;
-    var sectionId = section.getAttribute('id');
-
-    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-      // Add active class to the corresponding menu item
-      document.querySelector('.scroll-menu a[href="#' + sectionId + '"]').classList.add('active');
-    } else {
-      // Remove active class from other menu items
-      document.querySelector('.scroll-menu a[href="#' + sectionId + '"]').classList.remove('active');
-    }
-  }
-});
-             </script>
 <body>
     <header class="bg-light text-center py-5">
         <h1>M Florist</h1>
