@@ -59,29 +59,34 @@ window.addEventListener('scroll', function() {
         <h1>M Florist</h1>
         <p>Your one-stop floral shop</p>
     </header>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <a class="navbar-brand" href="#">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <section id="nav" class="bg-primary text-white py-3">
-    <nav class="container">
-        <a href="#home" class="navbar-brand">M Florist</a>
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#gallery">Gallery</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-            </li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <section id="nav" class="bg-primary text-white py-3">
+        <nav class="container">
+            <a href="#home" class="navbar-brand">M Florist</a>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+</nav>
+
 </section>
 <div id="scrollMenu" class="scroll-menu">
   <a href="#home">Home</a>
